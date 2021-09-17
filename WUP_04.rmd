@@ -57,8 +57,23 @@ According to this chart the graduate, bachelor,and junior college have a higher 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfy the assumptions and is appropriate to answer the research question!-->
+```{r}
+model1 <- aov(WORDSUM~DEGREE,data=mydata)
+summary.aov(model1)
+```
 
+The P value is very small, the P value represents the chances of us getting this result or something farther when the null hypothesis is true. I don't think its accurate so I reject this null hypothesis.
+
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 15, 2, 2))
+plot(TukeyHSD(model1,las=2,conf.level=.95),las=2)
+```
+
+This chart shows that the high school and graduate are different from each other and that lt high school and high school are different from each other.The dotted line above zero doesn't run into the lt high school-graduate and high school-graduate. 
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
