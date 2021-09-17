@@ -76,4 +76,5 @@ This chart shows that the high school and graduate are different from each other
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+In conclusion we discussed how individuals with a graduate, bachelor,and junior college degree had scored better than the individuals in the lt high school and the high school category. We found that individuals that attended college had a mean value of 9 and higher while the high school individuals had a mean value of 8 or less. The p value was 0.000236, which was really small, in which we rejected the null hypothesis. And the final step we used was tukeyHSD model and we were able to see that the graduate and high school categories did not go over the 0. In conclusion these two categories are different from each other.
 
